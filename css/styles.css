@@ -5,12 +5,28 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 ul,
 ol {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 a {
   text-decoration: none;
+}
+img {
+  display: block;
 }
 address {
   font-style: normal;
@@ -18,12 +34,39 @@ address {
 button {
   cursor: pointer;
 }
+
+/* #endregion */
+/* #region Common */
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+}
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 /* #endregion */
 
 /* #region  Header*/
 .page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+.header-container {
+  display: flex;
+  align-items: center;
 }
 .header-nav {
+  display: flex;
+  align-items: center;
 }
 .logo {
   color: #4d5ae5;
@@ -34,10 +77,17 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+.header-logo {
+  padding: 24px 0;
+  margin-right: 76px;
+}
 .header-logo .logo-part {
   color: #2e2f42;
 }
 .nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 .nav-item {
 }
@@ -46,18 +96,26 @@ button {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
+  display: block;
 }
 .nav-link:hover,
 .nav-link:focus {
   color: #404bbf;
 }
 .contacts {
+  margin-left: auto;
 }
 .contacts-list {
+  display: flex;
+  gap: 40px;
+  align-items: center;
 }
 .contacts-item {
 }
 .contacts-link {
+  display: block;
+  padding: 24px 0;
   color: #434455;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -71,6 +129,7 @@ button {
 /* #region Solution */
 .solution {
   background: #2e2f42;
+  padding: 188px 472px 292px 472px;
 }
 .solution-title {
   color: #fff;
@@ -78,30 +137,40 @@ button {
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
+  margin: 0 auto 48px auto;
+  max-width: 496px;
 }
 .solution-button {
-  background: #4d5ae5;
+  background-color: #4d5ae5;
   color: #fff;
   font-weight: 500;
   font-size: 16px;
   font-family: inherit;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  margin: 0 auto;
+  display: block;
+  border-radius: 4px;
+  padding: 16px 32px;
+  border-width: 0;
 }
 .solution-button:hover,
 .solution-button:focus {
-  background: #404bbf;
+  background-color: #404bbf;
 }
 /* #endregion */
 
 /* #region Approache */
 .approache {
+  padding: 120px 156px;
 }
-.approache-title {
-}
+
 .approache-list {
+  display: flex;
+  gap: 24px;
 }
 .approache-item {
+  flex-basis: calc((100% - 72px) / 4);
 }
 .approache-subtitle {
   color: #2e2f42;
@@ -109,6 +178,7 @@ button {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .approache-text {
   line-height: 1.5;
@@ -189,7 +259,7 @@ button {
 }
 .footer-text {
   color: #f4f4fd;
-  letter-spacing: 0.02em;
   line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 /* #endregion */
