@@ -216,7 +216,7 @@ button {
   object-fit: cover;
 }
 .team-holder {
-  margin: 32px 0px;
+  padding: 32px 0px;
 }
 .team-subtitle {
   color: #2e2f42;
