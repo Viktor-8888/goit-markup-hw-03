@@ -189,6 +189,7 @@ button {
 /* #region Team */
 .team {
   background: #f4f4fd;
+  padding: 120px 156px;
 }
 .team-title {
   color: #2e2f42;
@@ -197,13 +198,24 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
+  margin: 0 auto 72px auto;
 }
 .team-list {
+  display: flex;
+  gap: 24px;
 }
 .team-iten {
   background-color: #ffffff;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .team-img {
+  max-width: 100%;
+  object-fit: cover;
+}
+.team-holder {
+  margin: 32px 16px;
 }
 .team-subtitle {
   color: #2e2f42;
@@ -211,15 +223,20 @@ button {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin: 0 0 8px 0;
+  text-align: center;
 }
 .team-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: center;
 }
+
 /* #endregion */
 
 /* #region Portfolio */
 .portfolio {
+  padding: 120px 156px;
 }
 .portfolio-title {
   color: #2e2f42;
@@ -228,12 +245,23 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
+  margin: 0 auto 72px auto;
 }
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 .portfolio-item {
 }
 .portfolio-img {
+  max-width: 360px;
+}
+.portfolio-holder {
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  padding: 32px 16px;
 }
 .portfolio-subtitle {
   color: #2e2f42;
@@ -241,16 +269,23 @@ button {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  text-align: left;
 }
 .portfolio-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: left;
 }
 /* #endregion */
 
 /* #region Footer */
 .page-footer {
   background-color: #2e2f42;
+  padding: 100px 1020px 100px 156px;
+}
+.footer-container {
+  max-width: 264px;
 }
 .footer-logo .logo-part {
   color: #f4f4fd;
@@ -261,5 +296,6 @@ button {
   color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-top: 16px;
 }
 /* #endregion */
